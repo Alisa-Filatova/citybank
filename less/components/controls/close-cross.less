@@ -1,0 +1,104 @@
+@import '../../variables';
+
+.close-cross {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @grey_dark;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(43deg);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @grey_dark;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(140deg);
+    }
+}
+
+.close-cross_error {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @red;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(43deg);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @red;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(140deg);
+    }
+}
+
+.close-cross_valid {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @blue;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(43deg);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: @blue;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        transform: rotate(140deg);
+    }
+}
+

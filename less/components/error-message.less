@@ -1,0 +1,54 @@
+@import '../variables';
+
+.error-message {
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    width: 170px;
+    height: 35px;
+    background: @red;
+    color: @white;
+    font-size: 16px;
+    position: absolute;
+    z-index: 200;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 1px 3px 18px 1px rgba(135, 125, 125, 0.28);
+    left: 64px;
+}
+
+.error-message::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;	
+    border-bottom: 10px solid @red;
+    position: absolute;
+    top: -19px;
+    left: 73px;
+}
+
+.error-message_email {
+    top: 115px;
+    visibility: hidden;
+}
+
+.error-message_name {
+    top: 180px;
+    visibility: hidden;
+}
+
+.error-message_country {
+    top: 230px;
+    visibility: hidden;
+}
+
+.error-message_agree {
+    left: 118px;
+    top: 281px;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}

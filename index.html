@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Citybank</title>
+
+    <link rel="stylesheet" href="dist/css/index.css">
+</html>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__text-block">
+                <h1 class="header__title">Banner header</h1>
+                <p class="header__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            
+            <form class="request-form" action="" method="">
+                <h2 class="request-form__title">Request form</h2>
+                <fieldset class="request-form__fieldset">
+                    
+                    <label 
+                        for="email" 
+                        class="request-form__placeholder request-form__placeholder_email"
+                    >
+                        Enter your E-Mail
+                    </label>
+                    <input 
+                        id="email" 
+                        class="input request-form__input request-form__input_e-mail" 
+                        type="text"
+                        name="e-mail"
+                        autocomplete="none"
+                    >
+                    <span class="error-message error-message_email">Enter correct E-mail</span>
+                    <button
+                        tabindex="-1"
+                        type="button" 
+                        class="request-form__reset close-cross request-form__reset_email"
+                    ></button>
+                    
+                    <label 
+                        for="name" 
+                        class="request-form__placeholder request-form__placeholder_name"
+                    >
+                        Enter your name
+                    </label>
+                    <input 
+                        id="name" 
+                        class="input request-form__input request-form__input_name" 
+                        type="text" 
+                        name="username"
+                        autocomplete="none"
+                    >
+                    <span class="error-message error-message_name">Enter correct name</span>
+                    <button
+                        tabindex="-1"
+                        type="button" 
+                        class="request-form__reset request-form__reset_name close-cross"
+                    ></button>
+                    
+                    <select 
+                        class="request-form__select-country input" 
+                        size="1" 
+                        name="country" 
+                        id="country"
+                    >
+                        <option value="Not selected" disabled selected>Select your country</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="China">China</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="France">France</option>
+                    </select>
+                    <span class="error-message error-message_country">Select your country</span>
+                    
+                    <label for="agree" class="request-form__check-agree">
+                        <input 
+                            id="agree" 
+                            type="checkbox" 
+                            name="agree"
+                            class="request-form__agree request-form__input" 
+                        >
+                        <span class="fake-checkbox"></span>
+                        <a class="request-form__link base-link">I agree with Terms & Conditions</a>
+                        <span class="error-message error-message_agree">You must agree</span>
+                    </label>
+                </fieldset>
+                <div class="request-form__btns">
+                    <input class="btn btn_submit" type="submit" value="Submit">
+                    <a href="#" class="base-link">Hyperlink</a>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <ul class="cards__wrapper">
+                <li class="card card_1">
+                    <div class="post">
+                        <button type="button" class="expand-btn post__expand-btn"></button>
+                        <h3 class="post__header">Post header 1</h3>
+                        <p class="post__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </li>
+                <li class="card card_2">
+                    <div class="post">
+                        <button type="button" class="expand-btn post__expand-btn"></button>
+                        <h3 class="post__header">Post header 2</h3>
+                        <p class="post__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </li>
+                <li class="card card_3">
+                    <div class="post">
+                        <button type="button" class="expand-btn post__expand-btn"></button>
+                        <h3 class="post__header">Post header 3</h3>
+                        <p class="post__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </li>
+                <li class="card card_4">
+                    <div class="post">
+                        <button type="button" class="expand-btn post__expand-btn"></button>
+                        <h3 class="post__header">Post header 4</h3>
+                        <p class="post__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </li>
+                <li class="card card_5">
+                    <div class="post">
+                        <button type="button" class="expand-btn post__expand-btn"></button>
+                        <h3 class="post__header">Post header 5</h3>
+                        <p class="post__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="promo">
+            <div class="promo__wrapper">
+                <div class="promo__image"></div>
+                <div class="promo__text">
+                    <h2 class="promo__heading">Title text</h2>
+                    <ol class="promo__list">
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Duis aute irure dolor in reprehenderit<sup>1</sup> 
+                                in voluptate velit
+                            </a>
+                        </li>
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Ullamco laboris nisi ut aliquip ex 
+                                ea commodo consequat
+                            </a>
+                        </li>
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Ut enim ad minim veniam, quis 
+                                nostrud exercitation
+                            </a>
+                        </li>
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Et dolore magna aliqua
+                            </a>
+                        </li>
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Sed do eiusmod tempor<sup>2</sup> 
+                                incididunt ut labore
+                            </a>
+                        </li>
+                        <li class="promo__list-item">
+                            <a class="promo__link" href="#">
+                                Lorem ipsum dolor sit amet<sup>3</sup> 
+                                consectetur adipisicing elit
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="modal-window invisible">
+                <div class="modal-window__wrapper">
+                    <h3 class="modal-window__heading">External link</h3> 
+                    <button type="button" class="modal-window__btn-close btn-close">X</button>
+                    <p class="modal-window__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum. Sed ut perspiciatis 
+                        unde omnis iste natus error sit voluptatem accusantium 
+                        doloremque laudantium, totam rem aperiam, eaque ipsa 
+                        quae ab illo 
+                    </p>
+                    <div class="modal-window__btns">
+                        <button class="base-link modal-window__base-link_cancel">Cancel</button>
+                        <button class="btn modal-window__btn_accept">Accept</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="overlay invisible"></div>
+        </section>
+    </main> 
+
+    <footer class="disclamers">
+        <ul class="disclamers__list">
+            <li class="disclamer">
+                <sup>1</sup>Reprehenderit - Lorem ipsum dolor 
+                sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore
+            </li>
+            <li class="disclamer">
+                <sup>2</sup>Tempor - Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat.
+            </li>
+            <li class="disclamer">
+                <sup>3</sup>Amet - Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur.
+            </li>
+        </ul>
+    </footer>
+
+    <script src="dist/js/index.js"></script>
+</body>

@@ -1,0 +1,21 @@
+.container() {
+    max-width: @screen_desktop;
+    padding: 0 5px;
+    margin: 0 auto;
+
+    @media (max-width: @screen_laptop) {
+        max-width: @screen_laptop;
+    }
+
+    @media (max-width: @screen_tablet) {
+        width: 100%;
+    }
+
+    @media (max-width: @screen_mobile) {
+        padding: 0 5px;
+    }
+
+    @media (max-width: @screen_mobile_min) {
+        padding: 0 10px;
+    }
+}

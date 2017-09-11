@@ -1,0 +1,43 @@
+@import '../../variables';
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    display: none;
+    
+    & + span {
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        background-color: @grey;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &:checked + span::after {
+        content: '';
+        width: 12px;
+        height: 2px;
+        position: absolute;
+        display: block;
+        top: 8px;
+        left: 5px;
+        transform: rotate(135deg);
+        background-color: @blue;
+        cursor: pointer;
+    }
+
+    &:checked + span::before {
+        content: '';
+        width: 6px;
+        height: 2px;
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 2px;
+        transform: rotate(51deg);
+        background-color: @blue;
+        cursor: pointer;
+    }
+}

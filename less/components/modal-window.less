@@ -1,0 +1,85 @@
+@import '../variables';
+
+.modal-window {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    width: @post-form-width;
+    margin-left: -(@post-form-width / 2);
+    overflow: hidden;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    background: @white;
+    border-radius: 3px;
+    z-index: 2000;
+    font-size: 16px;
+
+    &__wrapper {
+        padding: 20px;
+        color: @black;
+        position: relative;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    &__btns {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    &__base-link_cancel {
+        border: none;
+        background: transparent;
+        margin-right: 10px;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 33px;
+    }
+}
+
+
+@media (max-width: @screen_tablet) {
+
+    .modal-window {
+        margin-left: -45%;
+        position: absolute;
+        width: 90%;
+        top: 79%;
+
+        &__btn-close {
+            left: 91.4%;
+            top: 3%;
+        }
+    } 
+}
+
+@media (max-width: @screen_mobile) {
+
+    .modal-window {
+        transform: none;
+        margin-top: 10%;
+        margin-left: -50%;
+        position: absolute;
+        top: 64%;
+        left: 55%;
+
+        &__wrapper {
+            padding: 20px 10px 30px 10px;
+        }
+
+        &__btn-close {
+            left: 86.4%;
+            top: 2%;
+        }
+
+
+    }
+}

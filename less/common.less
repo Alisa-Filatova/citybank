@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: @blue;
+    background-color: @white;
+    text-align: left;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.base-link {
+    text-decoration: none;
+    color: @grey_dark;
+    font-size: 16px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+
+.invisible {
+    display: none;
+}
+
