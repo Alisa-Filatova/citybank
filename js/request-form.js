@@ -178,3 +178,10 @@ resetName.addEventListener('click', function(event) {
     event.preventDefault();
     nameInput.value = '';
 });
+
+window.addEventListener('load', function(event) {
+    nameInput.value = '';
+    emailInput.value = '';
+    selectCountry.value = 'Not selected';
+    agreeCheckbox.checked = false;
+});
